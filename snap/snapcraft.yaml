@@ -34,6 +34,14 @@ platforms:
 package-repositories:
   - type: apt
     ppa: amd-team/gfx117x
+  # PPA shorthand enables only the host architecture; add i386 explicitly.
+  - type: apt
+    url: https://ppa.launchpadcontent.net/amd-team/gfx117x/ubuntu
+    suites: [noble]
+    components: [main]
+    architectures: [i386]
+    key-id: F83FE7BE8F1A44E83CDA3625D47169167A18444E
+    key-server: keyserver.ubuntu.com
   - type: apt
     url: http://archive.ubuntu.com/ubuntu
     suites: [noble]
