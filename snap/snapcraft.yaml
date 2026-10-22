@@ -33,6 +33,8 @@ platforms:
 
 package-repositories:
   - type: apt
+    ppa: amd-team/gfx117x
+  - type: apt
     url: http://archive.ubuntu.com/ubuntu
     suites: [noble]
     components: [main]
